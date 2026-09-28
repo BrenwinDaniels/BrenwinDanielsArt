@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Original Comic Series — BrenwinDaniels</title>
+<style>
+:root{--bg:#111214;--panel:#191b1f;--text:#f4f1ea;--muted:#a9a7a2;--line:#303238;--accent:#ff5c35}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}.wrap{max-width:1180px;margin:auto;padding:0 28px}a{color:inherit;text-decoration:none}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-size:22px;font-weight:900}.brand span{color:var(--accent)}.back{color:var(--muted);font-size:14px}.hero{padding:85px 0 55px}.tag{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.hero h1{font-size:clamp(55px,9vw,110px);line-height:.86;letter-spacing:-.07em;margin:18px 0}.hero p{color:var(--muted);font-size:19px;max-width:680px;line-height:1.6}.grid{columns:3 280px;column-gap:18px;padding-bottom:90px}.card{break-inside:avoid;margin-bottom:18px;background:var(--panel);border:1px solid var(--line);cursor:pointer}.card img{display:block;width:100%;height:auto}.info{padding:15px}.info h2{margin:0 0 5px;font-size:20px}.info p{margin:0;color:var(--muted);font-size:13px}.modal{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;padding:25px;z-index:5}.modal.open{display:flex}.modal img{max-width:94vw;max-height:90vh}.close{position:absolute;top:15px;right:25px;color:white;font-size:38px;cursor:pointer}@media(max-width:700px){.wrap{padding:0 18px}.grid{columns:1}.hero{padding-top:60px}}
+</style></head>
+<body>
+<div class="wrap"><div class="nav"><a class="brand" href="../../index.html">BrenwinDaniels<span>✦</span></a><a class="back" href="../../index.html">← Back to portfolio</a></div>
+<section class="hero"><div class="tag">Original Comic Series · Unreleased</div><h1>Character<br>Development</h1><p>A collection of character sheets from an original comic series currently in development. The project is intentionally kept separate from the main portfolio so the wider illustration work remains visible.</p></section>
+<div class="grid">
+<div class="card"><img src="../../images/original-comic/Doll.jpg" alt="Doll"><div class="info"><h2>Doll</h2><p>Character development</p></div></div>
+<div class="card"><img src="../../images/original-comic/Father.jpg" alt="Father"><div class="info"><h2>Father</h2><p>Character development</p></div></div>
+<div class="card"><img src="../../images/original-comic/Miss%20Kito.jpg" alt="Miss Kito"><div class="info"><h2>Miss Kito</h2><p>Character development</p></div></div>
+<div class="card"><img src="../../images/original-comic/Pimp%20Marquis.jpg" alt="Pimp Marquis"><div class="info"><h2>Pimp Marquis</h2><p>Character development</p></div></div>
+<div class="card"><img src="../../images/original-comic/Rio%20Tanigawa.jpg" alt="Rio Tanigawa"><div class="info"><h2>Rio Tanigawa</h2><p>Character development</p></div></div>
+<div class="card"><img src="../../images/original-comic/The-Geisha.jpg" alt="The Geisha"><div class="info"><h2>The Geisha</h2><p>Character development</p></div></div>
+<div class="card"><img src="../../images/original-comic/Wang-Jin.jpg" alt="Wang-Jin"><div class="info"><h2>Wang-Jin</h2><p>Character development</p></div></div>
+</div></div>
+<div class="modal" id="modal"><span class="close">×</span><img id="modalImg" alt=""></div>
+<script>const m=document.getElementById('modal'),i=document.getElementById('modalImg');document.querySelectorAll('.card').forEach(c=>c.onclick=()=>{i.src=c.querySelector('img').src;i.alt=c.querySelector('h2').textContent;m.classList.add('open')});m.onclick=e=>{if(e.target===m||e.target.classList.contains('close'))m.classList.remove('open')};document.onkeydown=e=>{if(e.key==='Escape')m.classList.remove('open')}</script>
+</body></html>
